@@ -1,8 +1,8 @@
 {
-  "name": "safebase",
+  "name": "biggest",
   "type": "module",
   "version": "1.0.0",
-  "description": "safebase is helps you safely compute very large numbers.",
+  "description": "biggest is helps you safely compute very large numbers.",
   "source": "src/index.ts",
   "exports": {
     "types": "./dist/index.d.ts",
@@ -45,12 +45,12 @@
   },
   "release-it": {
     "hooks": {
-      "before:init": "npm run build"
+      "before:init": "pnpm run build"
     }
   },
   "lint-staged": {
     "*.ts": [
-      "npm run lint",
+      "pnpm run lint",
       "prettier --write"
     ]
   }
